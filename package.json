@@ -1,0 +1,10 @@
+{
+  "name": "letsprint-contracts",
+  "private": true,
+  "description": "Letsprint.ink smart contracts (unaudited). Build and test with Foundry.",
+  "dependencies": {
+    "@openzeppelin/contracts": "5.6.1",
+    "@uniswap/v4-core": "1.0.2",
+    "@uniswap/v4-periphery": "1.0.3"
+  }
+}

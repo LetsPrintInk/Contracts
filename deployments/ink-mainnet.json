@@ -1,0 +1,30 @@
+{
+  "chainId": 57073,
+  "network": "Ink mainnet",
+  "explorer": "https://explorer.inkonchain.com",
+  "contracts": {
+    "LaunchpadFactory": "0xd88C543Ddae849091F2160bba5881230c30E1634",
+    "LaunchRouter": "0x6874D1e52D4E58865da08D99362f490fF6a01fd8",
+    "PrintHook": "0xe1e2E5Bd7043322fd8aB7484ca01Dbb9ef83a0cC",
+    "LaunchpadRegistry": "0xc160252339e2bb31f67673ecE2b78AefA0CcE66d",
+    "CurveDeployer": "0x113191EE86a43167c67b1435b9A780a08E5Afc07",
+    "TokenDeployer": "0xA1C184af5b4de1f78EFe34A6C8983e168efd2024",
+    "StockVaultDeployer": "0x9c166Ae921a4E860Aa9b04F1679aA9544ACC2331",
+    "TimelockController": "0xaB2a18F4B22B42B1E2ca435d61E573180E6B54F6"
+  },
+  "governance": {
+    "safe": "0x51e854BbD6aB86D065BCD5B1D55A935336c92A38",
+    "treasury": "0x51e854BbD6aB86D065BCD5B1D55A935336c92A38"
+  },
+  "external": {
+    "PoolManager": "0x360E68faCcca8cA495c1B759Fd9EEe466db9FB32",
+    "WETH": "0x4200000000000000000000000000000000000006",
+    "USDC": "0x2D270e6886d130D724215A266106e6832161EAEd"
+  },
+  "settings": {
+    "deployFeeWei": "500000000000000",
+    "ethGraduationWei": "5000000000000000000",
+    "usdcGraduation": "12800000000",
+    "spotlightPricesWei": ["100000000000000000", "200000000000000000", "500000000000000000", "1000000000000000000"]
+  }
+}
