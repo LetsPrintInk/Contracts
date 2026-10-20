@@ -17,6 +17,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/LetsPrintInk/LetsPrintInk-Contracts/actions/workflows/test.yml"><img alt="Tests" src="https://github.com/LetsPrintInk/LetsPrintInk-Contracts/actions/workflows/test.yml/badge.svg"></a>
   <img alt="Network" src="https://img.shields.io/badge/network-Ink%20mainnet%2057073-7533F5">
   <img alt="Solidity" src="https://img.shields.io/badge/solidity-0.8.26-363636">
   <img alt="Foundry" src="https://img.shields.io/badge/built%20with-Foundry-FFDB1C">
