@@ -1,0 +1,239 @@
+[
+  {
+    "type": "function",
+    "name": "buyWithETH",
+    "stateMutability": "payable",
+    "inputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      },
+      {
+        "name": "minTokensOut",
+        "type": "uint256"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "ref",
+        "type": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "tokensOut",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "sellForETH",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      },
+      {
+        "name": "tokensIn",
+        "type": "uint256"
+      },
+      {
+        "name": "minEthOut",
+        "type": "uint256"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "ref",
+        "type": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "sellForETHWithPermit",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      },
+      {
+        "name": "tokensIn",
+        "type": "uint256"
+      },
+      {
+        "name": "minEthOut",
+        "type": "uint256"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "ref",
+        "type": "bytes32"
+      },
+      {
+        "name": "permitDeadline",
+        "type": "uint256"
+      },
+      {
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "name": "s",
+        "type": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ethOut",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "buyWithToken",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      },
+      {
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "name": "minTokensOut",
+        "type": "uint256"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "ref",
+        "type": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "tokensOut",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "buyWithTokenPermit",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      },
+      {
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "name": "minTokensOut",
+        "type": "uint256"
+      },
+      {
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "name": "deadline",
+        "type": "uint256"
+      },
+      {
+        "name": "ref",
+        "type": "bytes32"
+      },
+      {
+        "name": "permitDeadline",
+        "type": "uint256"
+      },
+      {
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "name": "s",
+        "type": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "tokensOut",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "weth",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "factory",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ]
+  }
+]

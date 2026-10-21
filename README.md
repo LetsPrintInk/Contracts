@@ -67,6 +67,10 @@ flowchart LR
 
 External contracts used: Uniswap v4 PoolManager `0x360E68faCcca8cA495c1B759Fd9EEe466db9FB32`, WETH `0x4200000000000000000000000000000000000006`, USDC `0x2D270e6886d130D724215A266106e6832161EAEd`.
 
+## Integrating
+
+Building a trading terminal, bot, aggregator or indexer? [`docs/INTEGRATION.md`](docs/INTEGRATION.md) covers finding new coins, quoting and trading on the curve, the launch tax, graduation gas and the Uniswap v4 pool afterwards. ABIs are in [`abi/`](abi). No API key or permission needed.
+
 ## Fees
 
 | | Rate | Who gets it |
@@ -122,7 +126,9 @@ src/
 test/                    invariants, fuzz, hook, regression and Ink fork tests
 script/                  Deploy.s.sol, Smoke.s.sol, rehearse.sh
 deployments/             deployed addresses
+abi/                     ABIs for integrators (factory, curve, router)
 docs/DEPLOYMENT.md       settings, test results, review findings, deployment runbook
+docs/INTEGRATION.md      how trading apps, bots and indexers list and trade Letsprint coins
 ```
 
 ## Build and test

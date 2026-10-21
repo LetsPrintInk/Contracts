@@ -1,0 +1,329 @@
+[
+  {
+    "type": "function",
+    "name": "deployFee",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "launchTermsHash",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "name": "quote",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "curveOf",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "isCurve",
+    "stateMutability": "view",
+    "inputs": [
+      {
+        "name": "curve",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "tokenCount",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "weth",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "quoteAssetList",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address[]"
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "createToken",
+    "stateMutability": "payable",
+    "inputs": [
+      {
+        "name": "meta",
+        "type": "tuple",
+        "internalType": "struct TokenMetadata",
+        "components": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "name": "metadataURI",
+            "type": "string"
+          },
+          {
+            "name": "metadataHash",
+            "type": "bytes32"
+          },
+          {
+            "name": "twitter",
+            "type": "string"
+          },
+          {
+            "name": "telegram",
+            "type": "string"
+          },
+          {
+            "name": "website",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "p",
+        "type": "tuple",
+        "internalType": "struct LaunchParams",
+        "components": [
+          {
+            "name": "quote",
+            "type": "address"
+          },
+          {
+            "name": "firstBuyAmount",
+            "type": "uint256"
+          },
+          {
+            "name": "creatorTaxBps",
+            "type": "uint256"
+          },
+          {
+            "name": "teamWallets",
+            "type": "address[]"
+          },
+          {
+            "name": "feeRecipients",
+            "type": "address[]"
+          },
+          {
+            "name": "feeShares",
+            "type": "uint16[]"
+          },
+          {
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "name": "expectedTerms",
+            "type": "bytes32"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "name": "curve",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "TokenCreated",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "curve",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "creator",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "poolId",
+        "type": "bytes32",
+        "indexed": false
+      },
+      {
+        "name": "hook",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "quote",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "graduationAmount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "creatorTaxBps",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "metadata",
+        "type": "tuple",
+        "internalType": "struct TokenMetadata",
+        "components": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "name": "metadataURI",
+            "type": "string"
+          },
+          {
+            "name": "metadataHash",
+            "type": "bytes32"
+          },
+          {
+            "name": "twitter",
+            "type": "string"
+          },
+          {
+            "name": "telegram",
+            "type": "string"
+          },
+          {
+            "name": "website",
+            "type": "string"
+          }
+        ],
+        "indexed": false
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "TeamWalletsDeclared",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "wallets",
+        "type": "address[]",
+        "indexed": false
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "TokenPromoted",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "payer",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "tier",
+        "type": "uint8",
+        "indexed": false
+      },
+      {
+        "name": "startsAt",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "endsAt",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "paid",
+        "type": "uint256",
+        "indexed": false
+      }
+    ]
+  }
+]
