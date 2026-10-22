@@ -87,8 +87,10 @@ Creators can split their earnings across up to 5 wallets. A payout that fails (f
 | | ETH pairs | USDC pairs |
 | --- | --- | --- |
 | Supply | 1,000,000,000 (800M on the curve, 200M to the pool) | same |
-| Graduates at | 5 ETH raised | 12,800 USDC raised |
-| Market cap at start and at graduation | 0.3125 × and 5 × the amount raised | $4,000 to $64,000 |
+| Graduates at | 3 ETH raised | 7,680 USDC raised |
+| Market cap at start and at graduation | 0.3125 × and 5 × the amount raised | $2,400 to $38,400 |
+
+Graduation targets were lowered from 5 ETH / 12,800 USDC through the timelock on 24 October 2026. They apply to coins launched from then on; earlier coins keep the target they launched with. Each curve's own target is `graduationAmount()` on the curve.
 
 The buy that sells out the curve gets only the tokens left, pays only for those and is refunded the rest.
 

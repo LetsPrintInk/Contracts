@@ -26,6 +26,8 @@ Ink Sepolia has no Uniswap v4 deployment, so a coin cannot graduate there. See "
 | ETH graduation target (R) | `5 ether` | Starts near a $4,000 market cap and graduates near $64,000 at ETH = $2,566, in line with pump.fun's USDC pairs and the top of InkyPump's 1 to 5 ETH range |
 | USDC graduation target (R) | `12_800e6` | Starts at exactly $4,000 and graduates at $64,000, whatever ETH does |
 | Deploy fee | `0.0005 ether` | Anti-spam |
+
+These were the settings at deployment. On 24 October 2026 the Safe lowered the graduation targets through the timelock to 3 ETH and 7,680 USDC (`setQuoteAsset`), for coins launched from then on.
 | Spotlight prices | `[0.1, 0.2, 0.5, 1] ether` | 1h, 3h, 9h, 24h |
 
 Curve shape for any R: starting market cap 0.3125 x R, graduation market cap 5 x R, price rises 16x.

@@ -38,7 +38,7 @@ event TokenCreated(
     bytes32 poolId,            // the Uniswap v4 pool the coin will graduate into
     address hook,              // PrintHook
     address quote,             // WETH or USDC
-    uint256 graduationAmount,  // pair asset the curve raises before graduating (5 ETH, or 12,800 USDC)
+    uint256 graduationAmount,  // pair asset the curve raises before graduating (3 ETH or 7,680 USDC for coins launched from 24 Oct 2026; 5 ETH or 12,800 USDC before)
     uint256 creatorTaxBps,     // 0 to 1,000 (10%); can only ever go down
     TokenMetadata metadata     // name, symbol, metadataURI, metadataHash, twitter, telegram, website
 );
